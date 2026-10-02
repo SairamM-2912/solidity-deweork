@@ -1,0 +1,252 @@
+{
+	"id": "d10737fbcff231a5c441713d7b474bd4",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.34",
+	"solcLongVersion": "0.8.34+commit.80d5c536",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Types/DeworkTypes.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\nstruct FreelancerProfile{\r\n    uint256 id;\r\n    string name;\r\n    address wallet;\r\n    uint8 yearsOfExperience;\r\n    bool isAvailableHire;\r\n    uint256 HourlyRateWei;//1 eth =10^18 wei 0.01 ether\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.34;\"\n--> contracts/Types/DeworkTypes.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.34;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/Types/DeworkTypes.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/Types/DeworkTypes.sol": {
+				"ast": {
+					"absolutePath": "contracts/Types/DeworkTypes.sol",
+					"exportedSymbols": {
+						"FreelancerProfile": [
+							13
+						]
+					},
+					"id": 14,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"canonicalName": "FreelancerProfile",
+							"id": 13,
+							"members": [
+								{
+									"constant": false,
+									"id": 2,
+									"mutability": "mutable",
+									"name": "id",
+									"nameLocation": "76:2:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "68:10:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 1,
+										"name": "uint256",
+										"nodeType": "ElementaryTypeName",
+										"src": "68:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 4,
+									"mutability": "mutable",
+									"name": "name",
+									"nameLocation": "92:4:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "85:11:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 3,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "85:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 6,
+									"mutability": "mutable",
+									"name": "wallet",
+									"nameLocation": "111:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "103:14:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 5,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "103:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 8,
+									"mutability": "mutable",
+									"name": "yearsOfExperience",
+									"nameLocation": "130:17:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "124:23:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint8",
+										"typeString": "uint8"
+									},
+									"typeName": {
+										"id": 7,
+										"name": "uint8",
+										"nodeType": "ElementaryTypeName",
+										"src": "124:5:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint8",
+											"typeString": "uint8"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 10,
+									"mutability": "mutable",
+									"name": "isAvailableHire",
+									"nameLocation": "159:15:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "154:20:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bool",
+										"typeString": "bool"
+									},
+									"typeName": {
+										"id": 9,
+										"name": "bool",
+										"nodeType": "ElementaryTypeName",
+										"src": "154:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 12,
+									"mutability": "mutable",
+									"name": "HourlyRateWei",
+									"nameLocation": "189:13:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "181:21:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 11,
+										"name": "uint256",
+										"nodeType": "ElementaryTypeName",
+										"src": "181:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "FreelancerProfile",
+							"nameLocation": "44:17:0",
+							"nodeType": "StructDefinition",
+							"scope": 14,
+							"src": "37:200:0",
+							"visibility": "public"
+						}
+					],
+					"src": "37:200:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
